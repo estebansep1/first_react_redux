@@ -20,7 +20,7 @@ function Todo() {
                 <input type="text" onChange={(e) => setInput(e.target.value)} />
                 <button type="submit">Submit</button>
             </form>
-            <ul>
+            <ul style={{listStyleType: 'none'}}>
                 {renderItems}
             </ul>
             <button onClick={() => dispatch(clearTodo())}>Clear</button>

@@ -4,7 +4,7 @@ import { increment, decrement, incrementByAmount } from './features/counterSlice
 
 export default function Counter() {
     const [input, setInput] = useState(0)
-    const count = useSelector(state => state.value)
+    const count = useSelector(state => state.counter.value)
     const dispatch = useDispatch()
 
     const byAmountSubmit = e => {
